@@ -26,7 +26,7 @@ const {
 
   {
     inputs && (
-      <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
+      <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 shadow p-4 sm:p-6 lg:p-8 w-full">
         <FormContainer
           inputs={inputs}
           textarea={textarea}
@@ -38,3 +38,37 @@ const {
     )
   }
 </WidgetWrapper>
+
+<script is:inline>
+  document.querySelector('form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Gather form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    console.log(data)
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert(result.message);
+        e.target.reset();
+      } else {
+        const error = await response.json();
+        alert(`Error: ${error.message}`);
+      }
+    } catch (error) {
+      alert(`Error: ${error.message}`);
+    }
+  });
+</script>
