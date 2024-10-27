@@ -1,0 +1,77 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Features from '~/components/widgets/Features.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { Icon } from 'astro-icon/components'
+import { getPermalink } from '~/utils/permalinks';
+import intel from '../assets/icons/intel-logo.svg';
+import arm from '../assets/icons/arm-logo.svg';
+import riscv from '../assets/icons/risc-v-logo.svg';
+import mips from '../assets/icons/mips-logo.svg';
+import nxp from '../assets/icons/nxp-logo.svg';
+import nvidia from '../assets/icons/nvidia-logo.svg';
+import rpi from '../assets/icons/rpi-logo.svg';
+import stm from '../assets/icons/stm-logo.svg';
+import ti from '../assets/icons/ti-logo.svg';
+
+const metadata = {
+  title: 'BSP development',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Board Support Package"
+    subtitle="Development services for embedded Linux devices."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#services' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Services"
+    id="services"
+    subtitle="Everything needed to run Linux on your device - from bootloader modifications and Linux kernel device tree adaptations to device driver extensions.<br /> Let's bring your device to life!"
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Custom device drivers development and mainlining',
+        description:'We design, develop, and upstream custom device drivers for long-term, seamless maintenance.' ,
+        icon: 'tabler:webhook',
+      },
+      {
+        title: 'Custom carrier boards and hardware support',
+        description: 'Tailored kernel customizations and device tree optimizations for custom carrier boards, including bare-metal, System-On-Chip (SoC) and System-On-Module (SoM) designs.',
+        icon: 'tabler:assembly',
+      },
+      {
+        title: 'Board bring-up and bootloader development',
+        description: 'Low level development to bring up and boot a Linux kernel on new hardware designs.',
+        icon: 'tabler:terminal-2',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Architectures"
+    subtitle="From bare-metal systems to System-On-Chip (SoC) and System-On-Module (SoM) architectures, MuXu ensures flawless integration and performance."
+    images={[ intel, arm, riscv, mips ]}
+  />
+
+  <Brands
+    title="Vendors"
+    subtitle="From consumer to industrial-grade solutions, we’ve worked with leading embedded vendors."
+    images={[ nxp, nvidia, rpi, stm, ti ]}
+  />
+
+</Layout>
+

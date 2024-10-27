@@ -31,6 +31,7 @@ export default defineConfig({
     sitemap(),
     mdx(),
     icon({
+      iconDir: 'src/assets/icons',
       include: {
         tabler: ['*'],
         'flat-color-icons': [
@@ -43,6 +44,10 @@ export default defineConfig({
           'voice-presentation',
           'business-contact',
           'database',
+          'idea',
+          'overtime',
+          'clock',
+          'planner',
         ],
       },
     }),

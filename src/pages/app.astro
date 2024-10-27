@@ -1,0 +1,70 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Features from '~/components/widgets/Features.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { Icon } from 'astro-icon/components'
+import { getPermalink } from '~/utils/permalinks';
+import docker from '../assets/images/docker-logo.svg';
+import podman from '../assets/images/podman-logo.svg';
+import kubernetes from '../assets/images/kubernetes-logo.svg';
+
+const metadata = {
+  title: 'Application development',
+};
+---
+
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Containerized application development"
+    subtitle="Develop and containerize embedded applications."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+  />
+  
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Features"
+    id="features"
+    subtitle="Why containerized applications?"
+    columns={2}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Portable',
+        description:'Run the same application whether in the cloud, your local development machine or your embedded target ensuring consistency across development, testing, and production environments.<br /><br />Isolate the application from the hardware and the operating system allowing you to re-use applications across a broad range of hardware platforms.' ,
+        icon: 'tabler:drag-drop-2',
+      },
+      {
+        title: 'Secure',
+        description:'Namespacing, control groups, system call selection, access control, capabilities selection -  containerized applications are isolated from the host and other containers enhancing the product’s security.' ,
+        icon: 'tabler:square-key',
+      },
+      {
+        title: 'Lightweight and scalable',
+        description:'Containers provide flexibility without affecting performance and allow to scale horizontally even on embedded devices.' ,
+        icon: 'tabler:affiliate',
+      },
+      {
+        title: 'Fast and easy to update and rollback',
+        description:'By using container registries and engines, updating applications re-use robust and established protocols to provide reliable and fast updates with minimum bandwidth usage and rollback capabilities.' ,
+        icon: 'tabler:brand-strava',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Container technologies",
+    subtitle="Choose from a selection of container engines, runtimes and orchestrators to exactly match your product's needs." ,
+    images={[ docker, podman, kubernetes ]}
+  />
+
+</Layout>

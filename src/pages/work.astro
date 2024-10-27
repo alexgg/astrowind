@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import { Icon } from 'astro-icon/components'
+import { getPermalink } from '~/utils/permalinks';
+import Features2 from '~/components/widgets/Features2.astro';
+import Contact from '~/components/widgets/Contact.astro';
+
+const metadata = {
+  title: 'How we work',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="How we work"
+    subtitle="Different development models to suit your needs"
+    items={[
+      {
+        title: 'Project delivery',
+        description: 'From planning and requirements gathering to roadmap and project management, we are responsible for the whole project and guarantee the result.',
+        icon: 'flat-color-icons:overtime',
+      },
+      {
+        title: 'Consultancy',
+        description: 'Product feasibility studies, risk assessments and implementation cost reports, we analyze requirements and offer optimal and cost effective solutions.',
+        icon: 'flat-color-icons:idea',
+      },
+    ]}
+    columns={2}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-grey-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Contact Widget ************** -->
+  <Contact
+    title="Contact Us"
+    subtitle="Share your project's details for free consultation"
+    tagline=""
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Full Name',
+        placeholder: 'Please state your full name'
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+        placeholder: 'someone@email.com'
+      },
+    ]}
+    textarea={{
+      label: 'Message',
+      placeholder: 'Let us know about your project, the more details the better.'
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    description='Our team will usually get in touch within 48 hours.'
+  /Contact>
+</Layout>

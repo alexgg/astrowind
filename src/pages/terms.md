@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+Last updated: October 27, 2024
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -17,23 +17,18 @@ The words of which the initial letter is capitalized have meanings defined under
 
 For the purposes of these Terms and Conditions:
 
-- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
-- **Country** refers to: California, United States
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- __Affiliate__ means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
-- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
-
-- **Service** refers to the Website.
-
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
-
-- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-
-- **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
-
-- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+- __Country__ refers to:  Spain
+- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to MuXu.
+- __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- __Service__ refers to the Website.
+- __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
+- __Third-party Social Media Service__ means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- __Website__ refers to MuXu, accessible from [https://www.muxu.io](https://www.muxu.io)
+- __You__ means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ## Acknowledgment
 
@@ -43,7 +38,7 @@ Your access to and use of the Service is conditioned on Your acceptance of and c
 
 By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
 
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
+You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
 
 Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
@@ -63,7 +58,7 @@ Upon termination, Your right to use the Service will cease immediately.
 
 ## Limitation of Liability
 
-Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or nothing if You haven't purchased anything through the Service.
 
 To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
 
@@ -87,7 +82,7 @@ If You have any concern or dispute about the Service, You agree to first try to 
 
 ## For European Union (EU) Users
 
-If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which You are resident.
 
 ## United States Legal Compliance
 
@@ -101,11 +96,12 @@ If any provision of these Terms is held to be unenforceable or invalid, such pro
 
 ### Waiver
 
-Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not affect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
 
 ## Translation Interpretation
 
-These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+These Terms and Conditions may have been translated if We have made them available to You on our Service.
+You agree that the original English text shall prevail in the case of a dispute.
 
 ## Changes to These Terms and Conditions
 
@@ -117,4 +113,4 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 If you have any questions about these Terms and Conditions, You can contact us:
 
-- By email: somecoolemail@domain.com
+- By email: hello@muxu.io

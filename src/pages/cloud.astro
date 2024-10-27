@@ -1,0 +1,77 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Features from '~/components/widgets/Features.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { Icon } from 'astro-icon/components'
+import { getPermalink } from '~/utils/permalinks';
+import balena from '../assets/images/balena-logo.svg';
+import mender from '../assets/images/mender-logo.svg';
+import aws from '../assets/images/aws-logo.svg';
+import azure from '../assets/images/azure-logo.svg';
+
+const metadata = {
+  title: 'Cloud management',
+};
+---
+
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Cloud management integration"
+    subtitle="Remotely update and debug your field deployments."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#services' },
+    ]}
+  />
+  
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Services"
+    id="services"
+    subtitle="Making sure your product can be updated and debugged remotely is an important element of field deployments. We can help integrating with the leaders in cloud based device management and remote updates software. "
+    columns={2}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Remote access',
+        description:'Securely access your devices from anywhere.',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Over the air (OTA) software updates',
+        description:'Remote and secure updates of host operating systems and applications.',
+        icon: 'tabler:a-b-2',
+      },
+      {
+        title: 'Device group monitoring and management',
+        description:'Receive status alerts, collect health data and predict failures and maintenance.',
+        icon: 'tabler:brand-onedrive',
+      },
+      {
+        title: 'Cloud computing and analytics',
+        description:'Collect sensor or device data and process it on edge or forward it to the cloud.',
+        icon: 'tabler:chart-circles',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Cloud management",
+    subtitle="Integrate with the leaders in cloud management SaaS solutions." ,
+    images={[ balena, mender ]}
+  />
+
+  <Brands
+    title="Cloud computing and analytics",
+    subtitle="Forward sensor data to cloud platforms for storage and analysis." ,
+    images={[ aws, azure ]}
+  />
+
+</Layout>

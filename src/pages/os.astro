@@ -1,0 +1,124 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Features from '~/components/widgets/Features.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { Icon } from 'astro-icon/components'
+import { getPermalink } from '~/utils/permalinks';
+import xenomai from '../assets/images/xenomai-long-logo.png';
+import yp from '../assets/icons/yp-logo.svg';
+import oe from '../assets/icons/oe-logo.svg';
+import buildroot from '../assets/images/buildroot-logo.svg';
+import android from '../assets/icons/android-logo.svg';
+import linux from '../assets/images/linux-logo.svg';
+import wifi from '../assets/icons/wifi-logo.svg';
+import bluetooth from '../assets/images/bluetooth-logo.webp';
+import fiveg from '../assets/images/5g-logo.svg';
+import sixg from '../assets/images/6g-logo.png';
+import ltem from '../assets/images/lte-m-logo.svg';
+import lorawan from '../assets/images/lorawan-logo.svg';
+import zigbee from '../assets/images/zigbee-logo.png';
+import thread from '../assets/images/thread-logo.svg';
+import nfc from '../assets/images/nfc-logo.svg';
+import fcc from '../assets/images/fcc-logo.svg';
+import ce from '../assets/images/ce-logo.svg';
+import iso from '../assets/images/iso-logo.svg';
+import ul from '../assets/images/ul-logo.svg';
+
+const metadata = {
+  title: 'Embedded operating system',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Embedded operating system"
+    subtitle="Development services for secure, reliable, robust and updatable embedded Linux operating systems."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#services' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Services"
+    id="services"
+    subtitle="An operating system your application can rely on."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Custom Linux distributions',
+        description:'Full control and long term support of your embedded distribution.' ,
+        icon: 'tabler:webhook',
+      },
+      {
+        title: 'Boot time optimization',
+        description: 'Instant access to the application is an important requirement for a lot of products - optimizing boot paths and utilizing suspend and hibernation mechanisms can help.',
+        icon: 'tabler:assembly',
+      },
+      {
+        title: 'Remote OS updates and rollbacks',
+        description: 'Updating the operating system with the minimum service interruption and safely requires the use of redundant installations and rollbacks to a known good state.',
+        icon: 'tabler:terminal-2',
+      },
+      {
+        title: 'Secure boot and disk encryption',
+        description: 'Protecting intellectual property and making sure only authorized software can run on the device has become a commodity feature required by regulations like the European Union NIS2 for critical infrastructure and the CyberResilience Act (CRA) which applies to product security.',
+        icon: 'tabler:lock',
+      },
+      {
+        title: 'Device identification and authentication',
+        description: 'Trusted connections and secure communications including certificate storage and validation.',
+        icon: 'tabler:square-key',
+      },
+      {
+        title: 'Real time determinism',
+        description: 'Trading performance for determinism is a usual requirement for industrial applications.',
+        icon: 'tabler:clock-pause',
+      },
+      {
+        title: 'Wireless technologies',
+        description: 'Most products can no longer afford not to be connected.',
+        icon: 'tabler:wifi',
+      },
+      {
+        title: 'Certifications and regulatory compliance',
+        description: 'The long tail of productizing an embedded product, wireless regulations for WiFi, bluetooth or cellular, or security and industry specific certifications.',
+        icon: 'tabler:section-sign',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Custom Linux distributions",
+    subtitle="Building a Linux distribution from source provides full control over the contents, including size, licensing and security updates. It also allows for robust non-package based update strategies like redundant partition updates." ,
+    images={[ yp, oe, buildroot, android ]}
+  />
+
+  <Brands
+    title="Real time determinism"
+    subtitle="Either an RT preemptible Linux kernel or using a micro-kernel like Real Time Application Interface (RTAI) or Xenomai, trading determinism for performance is usual in industrial applications."
+    images={[ linux, xenomai ]}
+  />
+
+  <Brands
+    title="Wireless technologies"
+    subtitle="Being connected allows for remote updates and fleet management, remote debugging and data retrieval, and it is an important requirement for Internet of things (IoT) and edge devices."
+    images={[ wifi, bluetooth, fiveg, sixg, ltem, lorawan, zigbee, thread, nfc ]}
+  />
+
+  <Brands
+    title="Certification and regulatory compliance"
+    subtitle="Understanding regulations and certification needs allow us to consider them in all development stages delivering ready to certify solutions."
+    images={[ fcc, ce, iso, ul ]}
+  />
+
+</Layout>
+
