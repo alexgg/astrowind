@@ -23,6 +23,19 @@ export const headerData = {
         },
       ],
     },
+    {
+      text: 'Work with us',
+      links: [
+        {
+          text: 'How we work',
+          href: getPermalink('/work'),
+        },
+        {
+          text: 'Pricing',
+          href: getPermalink('/pricing'),
+        },
+      ],
+    },
   ],
   actions: [{ text: 'Get in touch', href: getPermalink('contact') , target: '_blank' }],
   position: 'right',
@@ -35,22 +48,27 @@ export const footerData = {
     {
     },
     {
-    },
-    {
       title: 'Services',
       links: [
-        { text: 'Board Support Packages', href: '#' },
-        { text: 'Operating System', href: '#' },
-        { text: 'Application development', href: '#' },
-        { text: 'Remote management', href: '#' },
+        { text: 'Board Support Packages', href: getPermalink('bsp') },
+        { text: 'Operating System', href: getPermalink('os') },
+        { text: 'Application development', href: getPermalink('app') },
+        { text: 'Remote management', href: getPermalink('cloud') },
+      ],
+    },
+    {
+      title: 'Work with us',
+      links: [
+        { text: 'How we work', href: getPermalink('work') },
+        { text: 'Pricing', href: getPermalink('pricing') },
       ],
     },
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Privacy', href: getPermalink('/privacy') },
+    { text: 'Cookies', href: getPermalink('/cookies') },
   ],
   socialLinks: [
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
 };
