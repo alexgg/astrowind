@@ -1,6 +1,7 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
+import { getPermalink } from '../utils/permalinks';
 
 import { headerData } from '~/navigation';
 import type { MetaData } from '~/types';
@@ -19,15 +20,8 @@ const { metadata } = Astro.props;
   <Fragment slot="header">
     <slot name="header">
       <Header
-        links={headerData?.links[2] ? [headerData.links[2]] : undefined}
-        actions={[
-          {
-            text: 'Download',
-            href: 'https://github.com/onwidget/astrowind',
-          },
-        ]}
+        {...headerData}
         showToggleTheme
-        position="right"
       />
     </slot>
   </Fragment>
