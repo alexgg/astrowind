@@ -1,9 +1,12 @@
 ---
-import { SITE } from 'astrowind:config';
+import { Image } from 'astro:assets';
+import logoLight from '../assets/images/muxu-logo-light.png'
+import logoDark from '../assets/images/muxu-logo-dark.png'
 ---
 
 <span
   class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+  <Image src={logoDark} alt='MuXu Logo'  className="hidden dark:block"/>
+  <Image src={logoLight} alt='MuXu Logo'  className="block dark:hidden"/>
 </span>
