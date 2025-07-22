@@ -6,6 +6,8 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
 ---
 
 <form>
+  <input type="hidden" name="access_key" value="c570eb36-b59f-4288-9269-e4c9b65bb90f" />
+  
   {
     inputs &&
       inputs.map(
@@ -25,7 +27,6 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
                 placeholder={placeholder}
                 class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-800"
               />
-              <input type=hidden name=access_key value=492a6be4-bdfd-4033-9e9b-893b9767a8f9 />
             </div>
           )
       )
