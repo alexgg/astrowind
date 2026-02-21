@@ -61,6 +61,8 @@ export interface MetaData {
 
   openGraph?: MetaDataOpenGraph;
   twitter?: MetaDataTwitter;
+
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 export interface MetaDataRobots {

@@ -28,7 +28,9 @@ export default defineConfig({
 
   integrations: [tailwind({
     applyBaseStyles: false,
-  }), sitemap(), mdx(), icon({
+  }), sitemap({
+    filter: (page) => !page.includes('/landing/') && !page.includes('/homes/') && !page.includes('/services'),
+  }), mdx(), icon({
     iconDir: 'src/assets/icons',
     include: {
       tabler: ['*'],

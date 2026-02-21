@@ -10,6 +10,37 @@ import Contact from '~/components/widgets/Contact.astro';
 
 const metadata = {
   title: 'Muxu',
+  structuredData: [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'MuXu',
+      url: 'https://www.muxu.io',
+      logo: 'https://www.muxu.io/favicon.svg',
+      description: 'Embedded Linux consultancy — from board bring-up to production-certified software products.',
+      areaServed: 'Worldwide',
+      founder: {
+        '@type': 'Person',
+        name: 'Alex Gonzalez',
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressRegion: 'La Rioja',
+        addressCountry: 'ES',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'MuXu',
+      url: 'https://www.muxu.io',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://www.muxu.io/search?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
 };
 ---
 

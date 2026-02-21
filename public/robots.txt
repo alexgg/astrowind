@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /landing/
+Disallow: /homes/
+Disallow: /services
+
+Sitemap: https://www.muxu.io/sitemap-index.xml

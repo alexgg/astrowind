@@ -1,0 +1,31 @@
+# MuXu
+
+> Embedded Linux consultancy — from board bring-up to production-certified software products.
+
+MuXu are embedded Linux experts based in La Rioja, Spain. We help start-ups and hardware companies ship embedded Linux products — BSP development, OS customization, containerized applications, remote device management, computer vision, and edge AI.
+
+## Services
+
+- [Board Support Package](https://www.muxu.io/bsp): BSP development, kernel maintenance, device driver development and board bring-up across ARM platforms.
+- [Operating System](https://www.muxu.io/os): Custom Linux distributions and production-grade OS builds using the Yocto Project and OpenEmbedded.
+- [Containers](https://www.muxu.io/app): Container engine integration, application isolation and orchestration on embedded devices.
+- [Remote Management](https://www.muxu.io/cloud): Fleet management, OTA updates, remote monitoring and diagnostics for embedded devices.
+- [Computer Vision](https://www.muxu.io/cv): Camera integration, video processing pipelines, object detection and media streaming on embedded hardware.
+- [Edge AI & IoT](https://www.muxu.io/ai): On-device AI inference, model optimization, neural network accelerator integration and IoT architecture.
+
+## Company
+
+- [About](https://www.muxu.io/about): Team, expertise and track record.
+- [How We Work](https://www.muxu.io/work): Engagement models and process.
+- [Pricing](https://www.muxu.io/pricing): Service packages and rates.
+- [Contact](https://www.muxu.io/contact): Get in touch for project consultation.
+
+## Legal
+
+- [Terms](https://www.muxu.io/terms)
+- [Privacy](https://www.muxu.io/privacy)
+- [Cookies](https://www.muxu.io/cookies)
+
+## Optional
+
+- [llms-full.txt](https://www.muxu.io/llms-full.txt): Full-text version of all pages.
