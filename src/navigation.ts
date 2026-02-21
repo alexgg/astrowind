@@ -14,12 +14,20 @@ export const headerData = {
           href: getPermalink('/os'),
         },
         {
-          text: 'Application',
+          text: 'Containers',
           href: getPermalink('/app'),
         },
         {
           text: 'Remote Management',
           href: getPermalink('/cloud'),
+        },
+        {
+          text: 'Computer Vision',
+          href: getPermalink('/cv'),
+        },
+        {
+          text: 'Edge AI & IoT',
+          href: getPermalink('/ai'),
         },
       ],
     },
@@ -54,6 +62,8 @@ export const footerData = {
         { text: 'Operating System', href: getPermalink('os') },
         { text: 'Application development', href: getPermalink('app') },
         { text: 'Remote management', href: getPermalink('cloud') },
+        { text: 'Computer Vision', href: getPermalink('cv') },
+        { text: 'Edge AI & IoT', href: getPermalink('ai') },
       ],
     },
     {

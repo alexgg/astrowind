@@ -1,0 +1,85 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { getPermalink } from '~/utils/permalinks';
+import tensorflow from '../assets/images/tensorflow-logo.svg';
+import onnx from '../assets/images/onnx-logo.svg';
+import llamacpp from '../assets/images/llamacpp-logo.svg';
+import ollama from '../assets/images/ollama-logo.svg';
+import nvidia from '../assets/icons/nvidia-logo.svg';
+
+const metadata = {
+  title: 'Edge AI & IoT Applications',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Edge AI & IoT Applications"
+    subtitle="On-device AI inference and IoT application services for embedded Linux."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#services' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Services"
+    id="services"
+    subtitle="From model optimization to full IoT architecture — deploying AI and connected applications on embedded devices."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'On-device LLM inference and deployment',
+        description: 'Local LLMs for privacy-preserving, low-latency NLP without cloud dependency.',
+        icon: 'tabler:message-chatbot',
+      },
+      {
+        title: 'Model optimization and quantization',
+        description: 'INT8/INT4 quantization, pruning, distillation for constrained devices.',
+        icon: 'tabler:adjustments',
+      },
+      {
+        title: 'Neural network accelerator integration',
+        description: 'NPU, GPU, TPU integration for inference throughput and energy efficiency.',
+        icon: 'tabler:cpu-2',
+      },
+      {
+        title: 'Sensor fusion and data preprocessing',
+        description: 'Combining multi-sensor data into clean inputs for AI models.',
+        icon: 'tabler:git-merge',
+      },
+      {
+        title: 'Edge-to-cloud AI pipelines',
+        description: 'Hybrid architectures: edge inference + cloud model updates and analytics.',
+        icon: 'tabler:cloud-computing',
+      },
+      {
+        title: 'IoT application architecture',
+        description: 'End-to-end IoT design: protocols, data flow, device management.',
+        icon: 'tabler:network',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Frameworks and runtimes"
+    subtitle="Open source frameworks and runtimes for deploying machine learning models and large language models on embedded devices."
+    images={[tensorflow, onnx, llamacpp]}
+  />
+
+  <Brands
+    title="Inference engines"
+    subtitle="Local inference engines for running large language models on edge hardware."
+    images={[ollama, nvidia]}
+  />
+
+</Layout>

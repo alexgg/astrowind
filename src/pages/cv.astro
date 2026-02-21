@@ -1,0 +1,78 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { getPermalink } from '~/utils/permalinks';
+import ultralytics from '../assets/images/ultralytics-logo.svg';
+import pytorch from '../assets/images/pytorch-logo.svg';
+import tensorflow from '../assets/images/tensorflow-logo.svg';
+import roboflow from '../assets/images/roboflow-logo.svg';
+
+const metadata = {
+  title: 'Computer Vision',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="MUXU"
+    title="Computer Vision"
+    subtitle="Vision and media processing services for embedded Linux devices."
+    actions={[
+      { variant: 'primary', text: 'Reach out', href: getPermalink('/contact'), icon: 'tabler:ballpen' },
+      { text: 'Learn more', href: '#services' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Services"
+    id="services"
+    subtitle="End-to-end vision and media processing — from camera bring-up to real-time analytics on embedded hardware."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Camera and sensor integration',
+        description: 'MIPI CSI, USB cameras, industrial cameras, ISP tuning and driver bring-up.',
+        icon: 'tabler:camera',
+      },
+      {
+        title: 'Hardware-accelerated video encoding and decoding',
+        description: 'Hardware encoding and decoding via SoC video processing units, minimizing CPU load.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Image and video processing pipelines',
+        description: 'GStreamer, OpenCV, FFmpeg pipelines optimized for target hardware.',
+        icon: 'tabler:topology-ring-3',
+      },
+      {
+        title: 'Object detection and classification',
+        description: 'YOLO and other on-device CV models for real-time detection and tracking.',
+        icon: 'tabler:focus-2',
+      },
+      {
+        title: 'Media streaming',
+        description: 'RTSP, WebRTC, HLS from embedded devices.',
+        icon: 'tabler:broadcast',
+      },
+      {
+        title: 'Industrial inspection and quality control',
+        description: 'Automated visual inspection for manufacturing and production.',
+        icon: 'tabler:scan-eye',
+      },
+    ]}
+  />
+
+  <Brands
+    title="Frameworks"
+    subtitle="Industry-standard frameworks for building computer vision and media processing pipelines on embedded hardware."
+    images={[ultralytics, pytorch, tensorflow, roboflow]}
+  />
+
+</Layout>
