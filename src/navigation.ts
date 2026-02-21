@@ -42,6 +42,10 @@ export const headerData = {
           text: 'Pricing',
           href: getPermalink('/pricing'),
         },
+        {
+          text: 'About',
+          href: getPermalink('/about'),
+        },
       ],
     },
   ],
@@ -71,6 +75,7 @@ export const footerData = {
       links: [
         { text: 'How we work', href: getPermalink('work') },
         { text: 'Pricing', href: getPermalink('pricing') },
+        { text: 'About', href: getPermalink('about') },
       ],
     },
   ],
